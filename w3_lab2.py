@@ -1,21 +1,13 @@
-
 n = int(input())
-
 # Each Test Case
 while True:
-    try: 
-        inp = input()
-        
-        if inp == "0":
-            break  
-    except EOFError:
+    target = list(map(int, input().split()))
+    if int(target[0]) == 0:
         break
-
-    target = list(map(int, inp.split()))
+    
     targetidx = 0
 
     a = list(range(n, 0, -1))
-
     stack = []
     results = []
 
@@ -28,10 +20,7 @@ while True:
             targetidx += 1
 
     
-    if targetidx == n:     
+    if targetidx == n:
         print("YES")
     else:
         print("NO")
-
-
-
