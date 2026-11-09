@@ -6,7 +6,7 @@ name_list = []
 score_list = []
 
 def load():
-    inp = input().split(',')
+    inp = input().strip().split(',')
     if len(inp) != 2:
         print("Error: invalid data format")
         return None
